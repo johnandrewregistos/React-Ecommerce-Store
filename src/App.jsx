@@ -14,7 +14,7 @@ import Hero from './components/Hero'
 function App() {
   const location = useLocation()
 
-  const isHomePage = location.pathname === '/'
+  const isHomePage = location.pathname === '/React-Ecommerce-Store/'
 
   return (
     <>
