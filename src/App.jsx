@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './components/Footer'
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './components/Home'
 import Item from './components/Item'
 import Navbar from './components/Navbar'
@@ -12,8 +12,9 @@ import Cart from './components/Cart'
 import Hero from './components/Hero'
 
 function App() {
+  const location = useLocation()
 
-  
+  const isHomePage = location.pathname === '/'
 
   return (
     <>
@@ -26,7 +27,7 @@ function App() {
         <Route path='/blogs/' element={<Blogs/>}/>
         <Route path='/cart/' element={<Cart/>}/>
       </Routes>
-      <Hero/>
+      {isHomePage && <Hero />}
       <Footer />
     </>
   )
