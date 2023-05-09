@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import ItemsTotal from './components/ItemsTotal'
 import Blogs from './components/Blogs'
+import Cart from './components/Cart'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/products/' element={<ItemsTotal/>}/>
         <Route path='/blogs/' element={<Blogs/>}/>
+        <Route path='/cart/' element={<Cart/>}/>
       </Routes>
       <Footer />
     </>
