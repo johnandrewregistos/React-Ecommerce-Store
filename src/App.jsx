@@ -25,7 +25,7 @@ function App() {
         <Route path='/blogs/' element={<Blogs/>}/>
         <Route path='/cart/' element={<Cart/>}/>
       </Routes>
-      <Item/>
+      <Home/>
       <Footer />
     </>
   )
