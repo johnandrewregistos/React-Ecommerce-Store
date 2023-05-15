@@ -8,14 +8,17 @@ const Navbar = () => {
 
   const handleMenu = () => {
     setMenu(true);
+    document.getElementById("menu").classList.add('hidden');
   }
   const handleClose = () => {
     setMenu(false);
+    document.getElementById("menu").classList.remove('hidden');
   }
 
   useEffect(() => {
     const handleScroll = () => {
       setMenu(false);
+      document.getElementById("menu").classList.remove('hidden');
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
