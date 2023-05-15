@@ -47,6 +47,7 @@ const Navbar = () => {
         </Link >
         <button
           onClick={() => handleMenu()}
+          id="menu"
           className="block md:hidden items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-2xl text-white "><BiMenuAltRight /></button>
 
         {
