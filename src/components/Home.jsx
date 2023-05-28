@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div id='home'>
     <Hero />
     {
       products.length > 0 ? 
@@ -25,7 +25,7 @@ const Home = () => {
       :
       <div className='text-2xl font-bold flex justify-center items-center'>Loading...</div>
     }
-    </>
+    </div>
   )
 }
 
